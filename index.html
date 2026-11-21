@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlgoSphere: an AI coach for LeetCode and GeeksforGeeks</title>
+<meta name="description" content="A Chrome extension that teaches you DSA problems: 8 progressive hints, edge-case tests you run on LeetCode, brute force to optimal with animated dry runs, code review, and notes on GitHub.">
+<meta property="og:title" content="AlgoSphere: learn the problem, not just the answer">
+<meta property="og:description" content="Progressive hints, tests on LeetCode, animated dry runs and code review for LeetCode and GeeksforGeeks.">
+<meta property="og:image" content="assets/cover.png">
+<link rel="icon" href="assets/icon128.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="assets/icon128.png" alt="">AlgoSphere</a>
+    <nav><a href="#features">Features</a><a href="#install" class="keep">Install</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <div class="hero">
+    <h1>Learn the problem,<br><span class="grad">not just the answer.</span></h1>
+    <p class="lead">An AI coach for LeetCode and GeeksforGeeks. Hints one at a time, edge-case tests you run with your own code, and brute force to optimal with animated dry runs.</p>
+    <div class="cta">
+      <a class="btn primary" href="AlgoSphere-latest.zip" download>⬇ Download for Chrome (v4.6.0)</a>
+      <a class="btn" href="#install">How to install</a>
+    </div>
+    <p class="small">Free · works in Chrome and Edge · bring your own AI key (Gemini has a free tier)</p>
+    <img class="shot" src="assets/cover.png" alt="AlgoSphere's workspace with a LeetCode problem and progressive hints">
+  </div>
+
+  <section id="features">
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="card"><h3>💡 8 progressive hints</h3><p>From "what is this really asking?" to edge cases. Each one gives away a little more, and none contain code.</p></div>
+      <div class="card"><h3>🧪 Tests you actually run</h3><p>Normal and edge cases, plus your own. One click runs them on LeetCode or GFG with your code and account.</p></div>
+      <div class="card"><h3>🧠 Brute force → optimal</h3><p>The clues in the problem, what the constraints allow, and three approaches with line-by-line complexity.</p></div>
+      <div class="card"><h3>🎬 Animated dry runs</h3><p>Arrays, trees, linked lists and graphs, step by step, next to the pseudocode and C++ code.</p></div>
+      <div class="card"><h3>🔍 Review</h3><p>Check your approach before you code, or get your code reviewed with line references.</p></div>
+      <div class="card"><h3>📦 Notes on GitHub</h3><p>Every problem saved to your own repository as a readable README, one commit per save.</p></div>
+    </div>
+  </section>
+
+  <section class="two">
+    <img class="shot" src="assets/tests.png" alt="Tests tab: Run all on LeetCode, 8 of 10 passed" loading="lazy">
+    <img class="shot" src="assets/dry-run.png" alt="Full-screen dry run of Dijkstra's algorithm on a graph" loading="lazy">
+  </section>
+
+  <section id="install">
+    <h2>Install in a minute</h2>
+    <ol class="steps">
+      <li><strong>Download</strong> <a href="AlgoSphere-latest.zip" download>AlgoSphere-latest.zip</a> and unzip it. Keep the <code>AlgoSphere</code> folder somewhere permanent: Chrome loads the extension from it.</li>
+      <li>Open <code>chrome://extensions</code> (or <code>edge://extensions</code>) and turn on <strong>Developer mode</strong> in the top-right corner.</li>
+      <li>Click <strong>Load unpacked</strong> and choose the unzipped <code>AlgoSphere</code> folder.</li>
+      <li>Open any LeetCode or GeeksforGeeks problem and click the <strong>AlgoSphere</strong> tab on the side of the page (or press <code>Alt+Shift+H</code>).</li>
+      <li>In <strong>Settings</strong>, add an AI key. A free Gemini key from <a href="https://aistudio.google.com/" rel="noopener">Google AI Studio</a> is enough; Claude and OpenAI keys work too.</li>
+    </ol>
+    <p class="note small">Updating: download the new zip, replace the folder's contents, then click ↻ on AlgoSphere in <code>chrome://extensions</code>. Your notes and settings stay.</p>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Your key, your data</h2>
+      <p>AlgoSphere has no server. Your AI key and notes stay in your browser, requests go straight to the AI provider you choose, and GitHub sync only writes to a repository you pick. <a href="privacy.html">Read the privacy policy</a>.</p>
+    </div>
+    <img class="shot" src="assets/panel.png" alt="The AlgoSphere panel on LeetCode's Two Sum" loading="lazy">
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">AlgoSphere v4.6.0 · Designed and built by <a href="https://www.linkedin.com/in/rishit-aggarwal/">Rishit Aggarwal</a> · <a href="https://github.com/rishitaggarwal1">GitHub</a> · <a href="https://medium.com/@rishitaggarwal1">Medium</a> · <a href="privacy.html">Privacy</a> · Not affiliated with LeetCode or GeeksforGeeks.</div>
+</footer>
+</body>
+</html>
